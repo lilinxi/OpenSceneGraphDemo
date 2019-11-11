@@ -14,5 +14,9 @@ set(OSG_DB_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libosgDB.dylib)
 #link_libraries(${OSG_LINK} ${OPEN_THREADS_LINK} ${OSG_DB_LINK} ${OSG_VIEWER_LINK} ${OSG_UTIL_LINK})
 link_libraries(${OSG_LINK} ${OPEN_THREADS_LINK} ${OSG_DB_LINK})
 
-set(SOURCE_FILES demo/2_1.cpp demo/2_2.cpp)
+set(SOURCE_FILES
+        demo/Simple/SimpleMain.cpp demo/Simple/SimpleSG.cpp
+        demo/State/StateMain.cpp demo/State/StateSG.cpp
+        demo/TextureMapping/TextureMappingMain.cpp demo/TextureMapping/TextureMappingSG.cpp
+        )
 add_executable(OpenSceneGraphDemo ${SOURCE_FILES})
