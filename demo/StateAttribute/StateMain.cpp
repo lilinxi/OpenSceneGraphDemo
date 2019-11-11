@@ -10,7 +10,7 @@ using std::endl;
 
 osg::ref_ptr<osg::Node> createSceneGraph_2();
 
-int main_2(int argc, char **argv) {
+int main(int argc, char **argv) {
     osg::ref_ptr<osg::Node> root = createSceneGraph_2();
     if (!root.valid()) {
         osg::notify(osg::FATAL) << "Failed in createSceneGraph()." << endl;

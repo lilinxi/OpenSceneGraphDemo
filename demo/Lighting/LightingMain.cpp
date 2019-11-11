@@ -1,4 +1,4 @@
-// Texture Mapping Example, Texture mapped tree, blending, alpha test
+// Lighting Example, Basic light and material control
 
 #include <osg/ref_ptr>
 #include <osgDB/Registry>
@@ -8,16 +8,16 @@
 
 using std::endl;
 
-osg::ref_ptr<osg::Node> createSceneGraph_3();
+osg::ref_ptr<osg::Node> createSceneGraph_4();
 
-int main_3(int argc, char **argv) {
-    osg::ref_ptr<osg::Node> root = createSceneGraph_3();
+int main_4(int argc, char **argv) {
+    osg::ref_ptr<osg::Node> root = createSceneGraph_4();
     if (!root.valid()) {
         osg::notify(osg::FATAL) << "Failed in createSceneGraph()." << endl;
         return 1;
     }
 
-    std::string out("TextureMapping.osg");
+    std::string out("Lighting.osg");
     if (!(osgDB::writeNodeFile(*(root.get()), out))) {
         osg::notify(osg::FATAL) << "Failed in osgDB::writeNodeFile()." << endl;
         return 1;

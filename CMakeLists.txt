@@ -16,7 +16,8 @@ link_libraries(${OSG_LINK} ${OPEN_THREADS_LINK} ${OSG_DB_LINK})
 
 set(SOURCE_FILES
         demo/Simple/SimpleMain.cpp demo/Simple/SimpleSG.cpp
-        demo/State/StateMain.cpp demo/State/StateSG.cpp
+        demo/StateAttribute/StateMain.cpp demo/StateAttribute/StateSG.cpp
         demo/TextureMapping/TextureMappingMain.cpp demo/TextureMapping/TextureMappingSG.cpp
+        demo/Lighting/LightingMain.cpp demo/Lighting/LightingSG.cpp
         )
 add_executable(OpenSceneGraphDemo ${SOURCE_FILES})
