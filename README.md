@@ -1,3 +1,3 @@
 # OpenSceneGraphDemo
 
-[](OSG%20UML.png)
+![](./OSG_UML.png)
