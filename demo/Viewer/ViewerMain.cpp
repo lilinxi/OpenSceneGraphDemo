@@ -3,7 +3,7 @@
 #include <osgViewer/Viewer>
 #include <osgDB/ReadFile>
 
-int main(int, char **) {
+int main_6(int, char **) {
     // Create a Viewer.
     osgViewer::Viewer viewer;
 

@@ -21,6 +21,6 @@ set(SOURCE_FILES
         demo/TextureMapping/TextureMappingMain.cpp demo/TextureMapping/TextureMappingSG.cpp
         demo/Lighting/LightingMain.cpp demo/Lighting/LightingSG.cpp
         demo/Text/TextMain.cpp demo/Text/TextSG.cpp
-        demo/Viewer/ViewerMain.cpp
+        demo/Viewer/ViewerMain.cpp demo/Viewer/ViewerMain_2.cpp
         )
 add_executable(OpenSceneGraphDemo ${SOURCE_FILES})
