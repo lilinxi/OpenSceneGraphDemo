@@ -23,5 +23,6 @@ set(SOURCE_FILES
         demo/Text/TextMain.cpp demo/Text/TextSG.cpp
         demo/Viewer/ViewerMain.cpp demo/Viewer/ViewerMain_2.cpp
         demo/Callback/CallbackMain.cpp
+        demo/FindNode/FindNodeMain.cpp
         )
 add_executable(OpenSceneGraphDemo ${SOURCE_FILES})

@@ -41,7 +41,7 @@ protected:
 osg::ref_ptr<osg::Node> createScene_7() {
     // Load the cow model.
     osg::ref_ptr<osg::Node> cow = osgDB::readNodeFile(
-            "/Users/limengfan/CLionProjects/OpenSceneGraphDemo/demo/Viewer/cow.osg");
+            "/Users/limengfan/CLionProjects/OpenSceneGraphDemo/demo/CallbackMain/cow.osg");
     if (!cow.valid()) {
         osg::notify(osg::FATAL) << "Unable to load data file. Exiting." << std::endl;
         return NULL;
@@ -92,12 +92,12 @@ osg::ref_ptr<osg::Node> createScene_7() {
     return root.get();
 }
 
-int main(int, char **) {
+int main_7(int, char **) {
     // Create the viewer and set its scene data to our scene
     //   graph created above.
     osgViewer::Viewer viewer;
     viewer.setSceneData(createScene_7().get());
-    if (!viewer.getSceneData()){
+    if (!viewer.getSceneData()) {
         return 1;
     }
 
