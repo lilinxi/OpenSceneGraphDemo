@@ -22,5 +22,6 @@ set(SOURCE_FILES
         demo/Lighting/LightingMain.cpp demo/Lighting/LightingSG.cpp
         demo/Text/TextMain.cpp demo/Text/TextSG.cpp
         demo/Viewer/ViewerMain.cpp demo/Viewer/ViewerMain_2.cpp
+        demo/Callback/CallbackMain.cpp
         )
 add_executable(OpenSceneGraphDemo ${SOURCE_FILES})
