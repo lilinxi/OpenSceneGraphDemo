@@ -11,9 +11,9 @@ set(OPEN_THREADS_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libOpenThread
 set(OSG_DB_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libosgDB.dylib)
 set(OSG_TEXT_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libosgText.dylib)
 set(OSG_VIEWER_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libosgViewer.dylib)
-#set(OSG_UTIL_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libosgUtil.dylib)
-#link_libraries(${OSG_LINK} ${OPEN_THREADS_LINK} ${OSG_DB_LINK} ${OSG_VIEWER_LINK} ${OSG_UTIL_LINK})
-link_libraries(${OSG_LINK} ${OPEN_THREADS_LINK} ${OSG_DB_LINK} ${OSG_TEXT_LINK} ${OSG_VIEWER_LINK})
+set(OSG_UTIL_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libosgUtil.dylib)
+set(OSG_GA_LINK /usr/local/Cellar/open-scene-graph/3.6.3/lib/libosgGA.dylib)
+link_libraries(${OSG_LINK} ${OPEN_THREADS_LINK} ${OSG_DB_LINK} ${OSG_TEXT_LINK} ${OSG_VIEWER_LINK} ${OSG_UTIL_LINK} ${OSG_GA_LINK})
 
 set(SOURCE_FILES
         demo/Simple/SimpleMain.cpp demo/Simple/SimpleSG.cpp
@@ -24,5 +24,6 @@ set(SOURCE_FILES
         demo/Viewer/ViewerMain.cpp demo/Viewer/ViewerMain_2.cpp
         demo/Callback/CallbackMain.cpp
         demo/FindNode/FindNodeMain.cpp
+        demo/Picking/PickingMain.cpp
         )
 add_executable(OpenSceneGraphDemo ${SOURCE_FILES})

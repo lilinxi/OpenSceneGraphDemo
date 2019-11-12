@@ -39,7 +39,7 @@ protected:
     osg::ref_ptr<osg::Node> _node;
 };
 
-int main(int, char **) {
+int main_8(int, char **) {
     osg::ref_ptr<osg::Node> sg = osgDB::readNodeFile(
             "/Users/limengfan/CLionProjects/OpenSceneGraphDemo/demo/FindNode/State.osg");
     if (!sg.valid()) {
