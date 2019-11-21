@@ -3,6 +3,7 @@ project(OpenSceneGraphDemo)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# brew install open-scene-graph
 set(OSG_H /usr/local/Cellar/open-scene-graph/3.6.3/include)
 include_directories(${OSG_H})
 
